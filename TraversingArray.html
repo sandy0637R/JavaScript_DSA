@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Traversing Array</title>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="getElement()">Get Element</button>
+
+
+    <script>
+        let data = [22,45,93,18,7,33,63,21];
+        
+        //for(let i=0;i<data.length;i++){       //for loop to display elements
+
+            //document.write(data[i])      //To display array elements
+
+            //document.write(`${data[i]}<br>`)    //To display array elements in understandable manner
+
+            //document.write(`Element ${i} is ${data[i]} <br>`)   //To display array elements with index
+        //}
+
+        //let x=3;                                //to access element accoding to the index no
+        //document.write(data[x])
+
+       //function getElement(){                                     //to access element with input and button
+         //let element=document.getElementById('element').value;
+         //alert(data[element])
+       //}
+
+       function getElement(){                                           //to add validation using if else condition
+        let element=document.getElementById('element').value;
+
+        if(element<data.length && typeof parseInt(element)==number)
+        {
+          alert(data[element])
+        }else
+        {
+            alert("Please enter a valid value")
+        }
+       }
+    </script>
+</body>
+</html>
