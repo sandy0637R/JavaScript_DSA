@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="Enter element you want to search" id="element">
+    <button onclick="searchElement()">Search</button>
+    <script>
+         //  let data=[11,22,33,44,55,66,77,88,99]
+         //  let index=undefined;
+         // let element=66;
+
+        // for(let i=0;i<=data.length-1;i++){
+        //     if(data[i]===element){                                           //=== use kiya kyuki woh string nahi hai
+        //         index=i;
+        //     }
+        // }console.log(index);
+        
+        function searchElement(){
+            let data=[11,22,33,44,55,66,77,88,99]
+            let element=document.getElementById('element').value;
+            let index=undefined;
+    
+            for(let i=0;i<=data.length-1;i++){
+                if(data[i]==element){                                        //== use kiya kyuki input se jo bhi value ati hai woh string hoti hai
+                    index=i;
+                }
+            }
+             console.warn(index);
+             alert(index);
+        }
+         
+        // let shortcut=data.indexOf(88);                    //shortcut for searching element (default function)
+        // console.log(shortcut);
+        
+    </script>
+</body>
+</html>
