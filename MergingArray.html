@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        dataA=[11,22,33,44,55];
+        dataB=[12,13,14,15,16];
+        dataC=[];
+        
+         for(i=0;i<dataA.length;i++){
+             dataC[i]=dataA[i];
+         }
+         for(i=0;i<dataB.length;i++){
+             dataC[dataA.length+i]=dataB[i];
+         }
+         console.warn(dataC)
+
+        dummy1=[1,2,3,4,5];                               //shortcut for merging loops
+        dummy2=[11,22,33,44,55];
+        dummy3=[...dummy1,...dummy2];
+        console.warn(dummy3)
+    </script>
+
+</body>
+</html>
