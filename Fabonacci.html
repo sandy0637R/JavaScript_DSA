@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" placeholder="Enter first no:" id="first-no"><br>
+    <input type="number" placeholder="Enter second no:" id="second-no"><br>
+    <input type="number" placeholder="Enter no of counts:" id="count"><br>
+    <input type="submit" value="submit" onclick="fabonacci()">
+    <script>
+        // let a=0;
+        // let b=1;
+
+        // for(let i=0;i<=10;i++){
+        //     let sum=a+b;
+        //     a=b;
+        //     b=sum;
+        //     console.log(sum)
+        // }
+
+
+        function fabonacci(){
+            var a=document.getElementById('first-no').value;
+            var b=document.getElementById('second-no').value;
+            var count=document.getElementById('count').value;
+            var firstNo=parseInt(a);
+            var secondNo=parseInt(b);
+
+            for(let i=0;i<count;i++){
+                let sum=firstNo+secondNo;
+                firstNo=secondNo;
+                secondNo=sum;
+                console.log(sum);
+                document.write(`${sum}<br>`);
+            }
+        }
+    </script>
+</body>
+</html>
