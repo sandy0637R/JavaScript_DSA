@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class is the blue print of the objects
+        class Bank{
+            // constructor is the special method, it is automatically called when an object is created
+            constructor (name,phoneNo,accountNo,customerId,address) {
+                // this points the current object
+                this.name = name
+                this.phoneNo = phoneNo
+                this.accountNo = accountNo
+                this.customerId = customerId
+                this.address = address
+            }
+
+            updateBalance (balance) {
+                this.balance = balance
+            }
+
+            updatePolicy (policy) {
+                this.policy = policy
+            }
+        }
+        
+        // new is used to create object 
+        // object is the instace of class 
+        const customer1 = new Bank("sandesh",8591723831,20001020,"abc123","Mulund")
+        customer1.updateBalance(212801)
+        console.log(customer1)
+        console.log(customer1.updateBalance)
+        console.log(customer1.name)
+        console.log(customer1.balance)
+        
+    </script>
+</body>
+</html>
