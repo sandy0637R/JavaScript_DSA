@@ -10,14 +10,14 @@
     <button onclick="deleteElement()">Delete Element</button>
     <script>
         let data = [15,25,35,45,55,65,75,85,95];
-        // let position=3;
+        let position=3;
 
-        // for(let i=position;i<data.length-1;i++){
-        //     data[i]=data[i+1]
-        // }console.warn(data)
-        // data.length=data.length-1;
-        // console.warn(data)
-        // alert(data)
+        for(let i=position;i<data.length-1;i++){
+            data[i]=data[i+1]
+        }console.warn(data)
+        data.length=data.length-1;
+        console.warn(data)
+        alert(data)
 
         function deleteElement(){
             let position=document.getElementById('position').value;
